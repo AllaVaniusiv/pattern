@@ -1,0 +1,4 @@
+requests
+pandas
+redis
+kafka-python

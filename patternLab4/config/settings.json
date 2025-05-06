@@ -1,0 +1,18 @@
+{
+  "dataset_url": "https://data.cityofnewyork.us/api/views/8m42-w767/rows.csv",
+  "output_strategy": "console",
+  "max_rows": 100,
+  "output_config": {
+    "console": {},
+    "kafka": {
+      "bootstrap_servers": "localhost:9092",
+      "topic": "fire_incidents"
+    },
+    "redis": {
+      "host": "localhost",
+      "port": 6379,
+      "db": 0,
+      "key_prefix": "fire_incident:"
+    }
+  }
+}
